@@ -1,0 +1,77 @@
+package handyPrograms;
+
+import java.util.LinkedList;
+
+
+public class Intersection_LinkedList {
+	//Node head;
+	static Node a,b;
+	
+	
+	static class Node
+	{
+		int data;
+		Node next;
+		Node(int data)
+		{
+			this.data=data;
+			this.next=null;
+		}
+	}
+	
+	public int intersection(Node node1, Node node2)
+	{
+		int flag=0;///considering the two link lists are of same size
+		
+		while(node1!=null && node2!=null)//code to check for intersection
+		{
+			
+			try
+			    {
+			if(node1.data!=node2.data)
+			{
+			flag=0;
+			
+			}
+			else
+			{
+				flag=1;
+			}
+			node1=node1.next;
+			node2=node2.next;
+			    }
+			catch(Exception e)
+			{
+				System.out.println(" "+e);
+			}
+		}
+		
+		
+		return flag;
+	}
+	
+	public static void main(String[] args)
+	{
+		Intersection_LinkedList intersect= new Intersection_LinkedList();
+		Intersection_LinkedList list= new Intersection_LinkedList();
+	list.a= new Node(1);
+	list.a.next=new Node(1);
+	list.a.next.next=new Node(1);
+	list.a.next.next.next=new Node(1);
+	list.b= new Node(9);
+	list.b.next=new Node(8);
+	list.b.next.next= new Node(7);
+	list.b.next.next.next= new Node(1);
+	
+	int res=intersect.intersection(a, b);
+	if(res==1)
+	{
+		System.out.println("intersection found");
+	}
+	else
+	{
+		System.out.println("intersection not found");
+	}
+	}
+
+}
