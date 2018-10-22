@@ -1,0 +1,14 @@
+package handyPrograms;
+import java.net.*;
+import java.io.*;
+public class Client_Connection {
+	
+	private Socket socket=null;
+	private DataInputStream input=null;
+	private DataOutputStream output=null;
+	
+	public Client_Connection(String Ipaddress, int port)
+	{
+		
+	}
+}

@@ -1,0 +1,13 @@
+package handyPrograms;
+
+public class Matrix_magic {
+	static int m=3;
+	static int n=3;
+
+	public static void main(String args[])
+	{
+		
+		int matrix[][]= {{0,2,3},{-1,2,-3},{3,2,0}};
+		
+	}
+}

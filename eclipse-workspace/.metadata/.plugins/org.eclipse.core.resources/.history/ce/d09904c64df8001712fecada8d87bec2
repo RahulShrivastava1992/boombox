@@ -1,0 +1,15 @@
+package handyPrograms;
+
+import java.util.LinkedList;
+
+public class DepthFirstSearch {
+	int Vertex;     // Nodes
+	LinkedList<Integer> adj[]; // Adjacency list
+	DepthFirstSearch(int vertex)
+	{
+		
+	}
+	
+	
+
+}

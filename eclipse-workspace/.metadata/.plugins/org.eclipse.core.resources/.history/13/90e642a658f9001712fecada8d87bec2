@@ -1,0 +1,68 @@
+package handyPrograms;
+
+import java.lang.reflect.Array;
+import java.util.Stack;
+
+public class DecimalToBinaryConverter {
+	
+	
+	public void calculateBinary(int n )
+	{
+		Stack<Integer> stack = new Stack<Integer>();
+		int rem;
+		
+		while(n!=0)
+		{
+			rem=n%2;
+			n=n/2;
+			stack.push(rem);
+		}
+		
+		int count=0;
+		for(Integer val:stack)
+		{
+			if(val==1)
+				count++;
+		}
+		while(!stack.isEmpty())
+		{
+			Integer values= stack.pop();
+			System.out.print(values+" ");
+			//System.out.println(" ");
+		}
+		
+		System.out.println("no of set bits are "+count);
+		int decimal=BinaryToDecimal(stack);
+		System.out.println(" decimal value is ");
+		
+	}
+	public int BinaryToDecimal(Stack<Integer> st)
+	{
+		int val1;
+		int Decimal=0;
+		int count=0;
+		while(!st.isEmpty())
+		{
+			val1 = st.pop();
+			Decimal=Decimal+val1*power(count);
+			count++;
+			
+		}
+		return 0;
+		
+	}
+	public int power(int count)
+	{
+		
+		return count;
+		
+	}
+	
+	
+	public static void main(String[] args)
+	{
+	DecimalToBinaryConverter dcb = new DecimalToBinaryConverter();
+	dcb.calculateBinary(999);
+	}
+
+}

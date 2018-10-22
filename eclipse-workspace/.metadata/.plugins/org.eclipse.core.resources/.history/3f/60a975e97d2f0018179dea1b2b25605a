@@ -1,0 +1,16 @@
+package handyPrograms;
+
+public class TranslateAndSort {
+		String[] array= {"Nine","Seven","Six","Five","Three","Four","Two","One","Eight","Zero"};
+		
+	public void sort()
+	{
+		
+		
+	}
+	public static void main(String [] args)
+	{
+		System.out.println("Before Sorting");
+		System.out.println(""+array);
+	}
+}

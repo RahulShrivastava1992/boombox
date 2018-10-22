@@ -1,0 +1,31 @@
+package handyPrograms;
+import java.net.*;
+import java.io.*;
+public class Server_Connection {
+	
+	private ServerSocket server=null;
+	private Socket socket=null;
+	private DataInputStream input=null;
+	
+	public Server_Connection(int port)
+	{
+		try {
+			server=new ServerSocket(port);
+			 System.out.println("Server started");
+			 
+	        System.out.println("Waiting for a client ...");
+			socket=server.accept();
+			System.out.println("Accepted !");
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+		try {
+			input =new DataInputStream(new BufferedInputStream(socket.getInputStream()));
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+
+}

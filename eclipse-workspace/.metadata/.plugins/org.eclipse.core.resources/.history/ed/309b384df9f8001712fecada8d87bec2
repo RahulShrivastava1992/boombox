@@ -1,0 +1,74 @@
+package handyPrograms;
+
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.Stack;
+
+public class DepthFirstSearch {
+	int Vertex;     // Nodes
+	LinkedList<Integer> adj[]; // Adjacency list
+	DepthFirstSearch(int vertex)
+	{
+		Vertex = vertex;
+		adj= new LinkedList[vertex];
+		for(int i=0;i<vertex;++i)
+		{
+			adj[i]=new LinkedList();
+		}
+	}
+	void addEdge(int v, int w)
+	{
+		adj[v].add(w);
+		
+	}
+	
+	void DFS(int s)
+	{
+		int count=0;
+		boolean visited[]= new boolean[Vertex];
+		Stack<Integer> stack = new Stack<Integer>();
+		Stack<Integer> result = new Stack<Integer>();
+		visited[s]=true;
+		stack.push(s);
+		
+		while(stack.peek() != null)
+		{
+			s=stack.pop();
+			
+			Iterator iter = adj[s].iterator();
+			
+			while(iter.hasNext() )
+				{
+				int n=(Integer)iter.next();
+			if(!visited[n])
+			{
+				visited[n]=true;
+				stack.push(n);
+				result.push(n);
+			}
+			
+				}
+			//count++;
+		}
+		System.out.println(" "+stack);
+		
+	}
+	
+	public static void main(String[] args)
+	{
+		DepthFirstSearch dfs= new DepthFirstSearch(4);
+		dfs.addEdge(0, 1);
+		dfs.addEdge(0, 2);
+		dfs.addEdge(1, 2);
+		dfs.addEdge(2, 0);
+		dfs.addEdge(2, 3);
+		dfs.addEdge(3, 3);
+ 
+        System.out.println("Following is Breadth First Traversal "+
+                           "(starting from vertex 0)");
+ 
+        dfs.DFS(0);
+		
+	}
+
+}

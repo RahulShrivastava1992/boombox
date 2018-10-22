@@ -1,0 +1,15 @@
+package handyPrograms;
+import java.net.*;
+import java.io.*;
+public class Server_Connection {
+	
+	private ServerSocket server=null;
+	private Socket socket=null;
+	private BufferedInputStream input=null;
+	
+	public Server_Connection(int socket)
+	{
+		
+	}
+
+}

@@ -1,0 +1,13 @@
+package handyPrograms;
+
+import java.util.HashMap;
+
+public class HashMap_Example {
+	public void HashMap()
+	{
+	System.out.println(" Hash map example");
+	HashMap<Integer,String> hm= new HashMap<Integer,String>();
+	
+	}
+
+}

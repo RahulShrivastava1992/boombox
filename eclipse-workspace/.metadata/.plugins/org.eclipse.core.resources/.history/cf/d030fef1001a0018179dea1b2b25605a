@@ -1,0 +1,25 @@
+package handyPrograms;
+import java.net.*;
+import java.io.*;
+public class Client_Connection {
+	
+	private Socket socket=null;
+	private DataInputStream input=null;
+	private DataOutputStream output=null;
+	
+	public Client_Connection(String Ipaddress, int port)
+	{
+		try {
+			socket=new Socket(Ipaddress,port);
+			System.out.println("Connected !");
+			input=new DataInputStream(System.in);
+			output=new DataOutputStream(socket.getOutputStream());
+		} catch (UnknownHostException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		} catch (IOException e) {
+			// TODO Auto-generated catch block
+			e.printStackTrace();
+		}
+	}
+}

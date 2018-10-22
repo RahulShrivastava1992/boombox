@@ -1,0 +1,27 @@
+package handyPrograms;
+import handyPrograms.Translator;;
+
+public class TranslateAndSort {
+		static String[] array= {"Nine","Seven","Six","Five","Three","Four","Two","One","Eight","Zero"};
+		
+	public void sort()
+	{
+		
+		
+	}
+	public static void main(String [] args)
+	{
+		int number[]=new int[10];
+		int i;
+		System.out.println("Before Sorting");
+		for(String str:array)
+		System.out.print(" "+str);
+		
+		for(String str1:array)
+		{
+			
+			number[i]=Translator.translateToInteger(str1);
+				i++;	
+		}
+	}
+}

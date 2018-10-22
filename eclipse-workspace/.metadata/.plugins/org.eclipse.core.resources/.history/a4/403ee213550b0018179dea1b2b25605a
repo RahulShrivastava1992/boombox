@@ -1,0 +1,10 @@
+package handyPrograms;
+
+ class Node
+		{
+		
+		}
+
+public class DoublyLinkedList {
+
+}

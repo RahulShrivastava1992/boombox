@@ -1,0 +1,10 @@
+package handyPrograms;
+
+public class TranslateAndSort {
+
+	public void sort()
+	{
+		System.out.println("Before Sorting");
+		
+	}
+}

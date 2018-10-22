@@ -1,0 +1,22 @@
+package handyPrograms;
+
+public class LinkList_Comparison {
+	
+	Node head;
+	static Node a,b;
+	
+	class Node
+	{
+		char data;
+		Node next;
+		public Node(char data, Node next) {
+			super();
+			this.data = data;
+			this.next = null;
+		}
+		
+	}
+	
+	
+
+}

@@ -1,0 +1,33 @@
+package handyPrograms;
+
+public class Intersection_LinkedList {
+	Node head;
+	static Node a,b;
+	static class Node
+	{
+		int data;
+		Node next;
+		Node(int data, Node next)
+		{
+			this.data=data;
+			this.next=null;
+		}
+	}
+	
+	public int intersection(Node node1, Node node2)
+	{
+		int flag=0;
+		
+		
+		while(node1!=null) // inserting value 1 to all the nodes
+		{
+			node1.data=1;
+			node1=node1.next;
+		}
+		
+		
+		
+		return flag;
+	}
+
+}

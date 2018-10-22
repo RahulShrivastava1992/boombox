@@ -1,0 +1,39 @@
+
+package handyPrograms;
+import java.util.*;
+public class HashMap_ex2
+{
+    public static void main(String args[])
+    {
+        //  Creation of HashMap
+        HashMap<String, String> Geeks = new HashMap<>();
+ 
+        //  Adding values to HashMap as ("keys", "values")
+        Geeks.put("Language", "Java");
+        Geeks.put("Platform", "Geeks For geeks");
+        Geeks.put("Code", "HashMap");
+ 
+ 
+        //  .entrySet() returns all the keys with their values present in Hashmap
+        Set<Map.Entry<String, String>> mappingGeeks = Geeks.entrySet();
+        System.out.println("Set of Keys and Values : "+mappingGeeks);
+        System.out.println();
+ 
+        //  Creating an iterator
+        System.out.println("Use of Iterator to remove the sets.");
+        Iterator<Map.Entry<String, String>> geeks_iterator = Geeks.entrySet().iterator();
+        while(geeks_iterator.hasNext())
+        {
+            Map.Entry<String, String> entry = geeks_iterator.next();
+            //  Removing a set one by one using iterator
+            System.out.println("Removing Key "+entry.getKey() );
+            System.out.println("Removing Value "+entry.getValue());
+            geeks_iterator.remove(); // right way to remove entries from Map,
+            
+            // avoids ConcurrentModificationException
+            System.out.println("Set of Keys and Values : "+mappingGeeks);
+ 
+        }
+    }
+}
+

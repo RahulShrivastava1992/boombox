@@ -1,0 +1,15 @@
+package handyPrograms;
+
+public class DecimalToBinaryConverter {
+	
+	public void calculateBinary(int n )
+	{
+		
+	}
+	
+	public static void main(String[] args)
+	{
+	
+	}
+
+}

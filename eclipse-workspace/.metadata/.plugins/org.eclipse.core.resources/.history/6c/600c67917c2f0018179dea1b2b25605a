@@ -1,0 +1,57 @@
+package handyPrograms;
+
+class Translator {
+public int translateToInteger(String str)
+			{
+				String numeric;
+				int Return=0;
+				numeric=str;
+				switch(numeric)
+				{
+				case "Zero":
+					Return=0;
+					break;
+				case "One":
+				Return=1;
+				break;
+				case "Two":
+				
+				Return=2;
+				break;
+				case "Three":
+				Return=3;
+				break;
+				case "Four":
+				Return=4;
+				break;
+				case "Five":
+				Return=5;
+				break;
+				case "Six":
+				Return=6;
+				break;
+				case "Seven":
+				Return=7;
+				break;
+				case "Eight":
+				Return=8;
+				break;
+				case "Nine":
+				Return=9;
+				break;
+				
+				default:
+				System.out.println("Input correct value");
+				
+				
+				}
+				return Return;
+				
+			}
+			
+			public String translateToAlphabetic(int number)
+			{
+			
+			}
+			
+			}

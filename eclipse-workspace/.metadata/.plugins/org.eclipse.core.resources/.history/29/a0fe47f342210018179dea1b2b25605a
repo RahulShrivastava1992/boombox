@@ -1,0 +1,12 @@
+package handyPrograms;
+
+public class Matrix_magic {
+	int m=3;
+	int n=3;
+
+	public static void main(String args[])
+	{
+		int[][] matrix= new int[m][n];
+		
+	}
+}

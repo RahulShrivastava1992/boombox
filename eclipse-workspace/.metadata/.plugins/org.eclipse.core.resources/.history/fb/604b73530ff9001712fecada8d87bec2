@@ -1,0 +1,8 @@
+package handyPrograms;
+
+public class HashMap_Example {
+	
+	System.out.println(" map example");
+	
+
+}

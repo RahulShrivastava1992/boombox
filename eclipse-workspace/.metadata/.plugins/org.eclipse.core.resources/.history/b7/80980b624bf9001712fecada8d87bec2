@@ -1,0 +1,22 @@
+package handyPrograms;
+
+import java.lang.reflect.Array;
+
+public class DecimalToBinaryConverter {
+	
+	public void calculateBinary(int n )
+	{
+		Array[]  array = new Array[5];
+		while(n>=0)
+		{
+		int rem = n%2;
+		
+		}
+	}
+	
+	public static void main(String[] args)
+	{
+	
+	}
+
+}

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<session version="1.0">
+<refactoring comment="Rename resource &apos;HelloWorldStruts2/WebContent/HelloWorld.jsp&apos; to &apos;index.jsp&apos;" description="Rename resource &apos;HelloWorld.jsp&apos;" flags="7" id="org.eclipse.ltk.core.refactoring.rename.resource" input="WebContent/HelloWorld.jsp" name="index.jsp" stamp="1510682450551" updateReferences="true"/>
+</session>
